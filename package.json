@@ -1,0 +1,15 @@
+{
+  "name": "insucode",
+  "version": "1.0.0",
+  "description": "INSUCODE es un editor de pseudocódigo el cual es usado para enseñar programación en los institutos, universidades, escuelas, etc.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"electron ."
+  },
+  "author": "Taller de Ciberseguridad INSUCO",
+  "license": "ISC"
+}
