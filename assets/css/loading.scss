@@ -18,6 +18,8 @@
             position: absolute;
             left: 133px;
             top: 195px;
+
+            animation: animacion_logo 1s ;
         }
 
         .subtitulo{
@@ -34,6 +36,8 @@
             line-height: 19px;
             
             color: #FFFFFF;
+
+            animation: animacion_logo_subtitulo 1s;
         }
         
     }
@@ -80,4 +84,32 @@
         }
     }
 
+    .otros{
+        .caja{
+            position: absolute;
+            width: 51px;
+            height: 51px;
+            left: 653px;
+            top: 25px;
+
+            animation: animacion_icono_caja 2s infinite;
+        }
+    }
+
+}
+
+@keyframes animacion_logo {
+    0%{left: 44px; opacity: 0%;}
+    100%{left: 133px; opacity: 100%}
+}
+
+@keyframes animacion_logo_subtitulo{
+    0%{left: 44px; opacity: 0%;}
+    100%{left: 205.6px; opacity: 100%}
+}
+
+@keyframes animacion_icono_caja{
+    0%{}
+    100%{transform: rotate(360deg);}
+    
 }

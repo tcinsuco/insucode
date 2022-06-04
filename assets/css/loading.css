@@ -17,6 +17,8 @@
   position: absolute;
   left: 133px;
   top: 195px;
+  -webkit-animation: animacion_logo 1s;
+          animation: animacion_logo 1s;
 }
 
 .container .logo .subtitulo {
@@ -31,6 +33,8 @@
   font-size: 15.7704px;
   line-height: 19px;
   color: #FFFFFF;
+  -webkit-animation: animacion_logo_subtitulo 1s;
+          animation: animacion_logo_subtitulo 1s;
 }
 
 .container .credits .programmed-by {
@@ -66,5 +70,77 @@
 .container .credits .taller-instagram a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.43);
+}
+
+.container .otros .caja {
+  position: absolute;
+  width: 51px;
+  height: 51px;
+  left: 653px;
+  top: 25px;
+  -webkit-animation: animacion_icono_caja 2s infinite;
+          animation: animacion_icono_caja 2s infinite;
+}
+
+@-webkit-keyframes animacion_logo {
+  0% {
+    left: 44px;
+    opacity: 0%;
+  }
+  100% {
+    left: 133px;
+    opacity: 100%;
+  }
+}
+
+@keyframes animacion_logo {
+  0% {
+    left: 44px;
+    opacity: 0%;
+  }
+  100% {
+    left: 133px;
+    opacity: 100%;
+  }
+}
+
+@-webkit-keyframes animacion_logo_subtitulo {
+  0% {
+    left: 44px;
+    opacity: 0%;
+  }
+  100% {
+    left: 205.6px;
+    opacity: 100%;
+  }
+}
+
+@keyframes animacion_logo_subtitulo {
+  0% {
+    left: 44px;
+    opacity: 0%;
+  }
+  100% {
+    left: 205.6px;
+    opacity: 100%;
+  }
+}
+
+@-webkit-keyframes animacion_icono_caja {
+  0% {
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes animacion_icono_caja {
+  0% {
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 /*# sourceMappingURL=loading.css.map */
